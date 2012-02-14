@@ -1,0 +1,24 @@
+__Resources:__
+
+- [fuzzfinder homepage](http://www.vim.org/scripts/script.php?script_id=1984)
+- [Cmd-T](https://wincent.com/products/command-t)
+
+```vim
+let g:fuf_coveragefile_globPatterns = ['**/*.h', '**/*.c']
+```
+
+
+
+useful stuff:
+
+    Example: search only .h and .c files:
+    >
+            call fuf#setOneTimeVariables(['g:fuf_coveragefile_globPatterns', ['**/*.h', '**/*.c']])
+                  \ | FufCoverageFile
+    <
+    Example: search your home directory in addition to the default coverage:
+    >
+            call fuf#setOneTimeVariables(['g:fuf_coveragefile_globPatterns', g:fuf_coveragefile_globPatterns + ['~/**/.*', '~/**/*']])
+                  \ | FufCoverageFile
+    <
+
