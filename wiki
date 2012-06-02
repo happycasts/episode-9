@@ -22,3 +22,8 @@ useful stuff:
                   \ | FufCoverageFile
     <
 
+
+
+## revised version
+
+now navigation among buffers seems really sexy!!! no more blindly <tab> all the time!!
